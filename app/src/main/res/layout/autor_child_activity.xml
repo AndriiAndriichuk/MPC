@@ -8,12 +8,24 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="22dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_email"
+        android:text="vovan@gmail.com"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Ваш ключ:"
         android:textSize="22dp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edit_child_key"/>
+        android:id="@+id/edit_child_key"
+        android:text="76R8FDPAQ"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

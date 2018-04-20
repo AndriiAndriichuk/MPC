@@ -1,0 +1,95 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ciuc.andrii.mymaps.StartActivity" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/btn_multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        fab:fab_addButtonColorNormal="#e7d04c"
+        fab:fab_addButtonColorPressed="#c7aa01"
+        fab:fab_addButtonPlusIconColor="#808080"
+        fab:fab_labelStyle="@style/menu_labels_style">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_find_m"
+            fab:fab_icon="@drawable/ic_search"
+            fab:fab_colorNormal="#e22879"
+            fab:fab_colorPressed="#da1169"
+            fab:fab_size="normal"
+            fab:fab_title="Пошук" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_children"
+            fab:fab_icon="@drawable/ic_children"
+            fab:fab_colorNormal="#dd6cef34"
+            fab:fab_colorPressed="#dd3ec206"
+            fab:fab_size="normal"
+            fab:fab_title="Діти"/>
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_type"
+            fab:fab_icon="@drawable/ic_earth"
+            fab:fab_colorNormal="#d033efc7"
+            fab:fab_colorPressed="#d05fcfb7"
+            fab:fab_size="normal"
+            fab:fab_title="Тип карти"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_exit"
+            fab:fab_icon="@drawable/ic_exit"
+            fab:fab_colorNormal="#d02c45e6"
+            fab:fab_colorPressed="#d06576e2"
+            fab:fab_size="normal"
+            fab:fab_title="Вихід"/>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:id="@+id/linear_search">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_Find"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/btn_find"
+            android:layout_width="370dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="find"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

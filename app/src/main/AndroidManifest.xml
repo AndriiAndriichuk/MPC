@@ -46,10 +46,12 @@
         </activity>
         <activity android:name=".AutoR_Parent" />
         <activity android:name=".AutoR_Child" />
-        <activity android:name=".Maps4Child">
-        </activity>
+        <activity android:name=".Maps4Child"></activity>
         <activity android:name=".Maps4Parent" />
-        <activity android:name=".Autorization"></activity>
+        <activity android:name=".Autorization" />
+        <activity
+            android:name=".MyChildren"
+            android:label="Мої діти"></activity>
     </application>
 
 </manifest>

@@ -1,24 +1,23 @@
-package com.ciuc.andrii.mymaps;
+package Modules;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 
-public class DataBase extends SQLiteOpenHelper {
+public class DBChildren extends SQLiteOpenHelper {
 
-    public DataBase(Context context) {
-        super(context, "C.db", null, 1);
+    public DBChildren(Context context) {
+        super(context, "Ch.db", null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table C(id integer primary key autoincrement, name text,child_key text);");
+        db.execSQL("create table Ch(id integer primary key autoincrement, child_name text,parent_name text,parent_email,password text);");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
-
 }

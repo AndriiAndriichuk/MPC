@@ -19,12 +19,15 @@ public class StartActivity extends AppCompatActivity{
         switch (sharedPreferences.getString("KEY_SAVE","-1")){
             case "1":
                 startActivity(new Intent(StartActivity.this, Maps4Parent.class));
+                finish();
                 break;
             case "2":
                 startActivity(new Intent(StartActivity.this, Maps4Child.class));
+                finish();
                 break;
             case "-1":
                 startActivity(new Intent(StartActivity.this, Autorization.class));
+                finish();
                 break;
         }
     }
